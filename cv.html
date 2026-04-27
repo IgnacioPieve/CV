@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Ignacio Pieve Roiger - CV</title>
+<style>
+  @page {
+    size: A4;
+    margin: 1.5cm 1.8cm;
+  }
+  * {
+    box-sizing: border-box;
+  }
+  body {
+    font-family: 'Helvetica', 'Arial', sans-serif;
+    font-size: 10pt;
+    line-height: 1.4;
+    color: #222;
+    margin: 0;
+    padding: 0;
+  }
+  .header {
+    margin-bottom: 14px;
+  }
+  .name {
+    font-size: 22pt;
+    font-weight: 700;
+    color: #111;
+    margin: 0 0 2px 0;
+    letter-spacing: -0.5px;
+  }
+  .title {
+    font-size: 11pt;
+    font-weight: 500;
+    color: #555;
+    margin: 0 0 6px 0;
+  }
+  .contact {
+    font-size: 9.5pt;
+    color: #444;
+  }
+  .contact span {
+    margin-right: 14px;
+  }
+  .section {
+    margin-top: 14px;
+  }
+  .section-title {
+    font-size: 10.5pt;
+    font-weight: 700;
+    color: #111;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    border-bottom: 1px solid #999;
+    padding-bottom: 3px;
+    margin: 0 0 8px 0;
+  }
+  .summary {
+    font-size: 10pt;
+    text-align: justify;
+    margin: 0;
+  }
+  .job {
+    margin-bottom: 12px;
+  }
+  .job-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 1px;
+  }
+  .job-title {
+    font-weight: 700;
+    font-size: 10.5pt;
+    color: #111;
+  }
+  .job-date {
+    font-size: 9.5pt;
+    color: #555;
+    font-style: italic;
+  }
+  .job-company {
+    font-size: 10pt;
+    color: #444;
+    margin-bottom: 5px;
+  }
+  ul {
+    margin: 4px 0 0 0;
+    padding-left: 16px;
+  }
+  li {
+    margin-bottom: 3px;
+    text-align: justify;
+  }
+  .skills-grid {
+    display: grid;
+    grid-template-columns: 180px 1fr;
+    gap: 4px 12px;
+    font-size: 10pt;
+  }
+  .skills-label {
+    font-weight: 600;
+    color: #111;
+  }
+  .education-item, .cert-item {
+    margin-bottom: 6px;
+  }
+  .education-header, .cert-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+  .education-title, .cert-title {
+    font-weight: 700;
+    font-size: 10pt;
+  }
+  .education-date, .cert-date {
+    font-size: 9.5pt;
+    color: #555;
+    font-style: italic;
+  }
+  .education-school, .cert-issuer {
+    font-size: 9.5pt;
+    color: #555;
+    margin-bottom: 2px;
+  }
+  .thesis {
+    font-size: 9.5pt;
+    color: #444;
+    font-style: italic;
+    margin-top: 2px;
+  }
+  .languages {
+    font-size: 10pt;
+  }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1 class="name">Ignacio Pieve Roiger</h1>
+  <div class="title">Senior Backend Engineer</div>
+  <div class="contact">
+    <span>+54 9 351 663 7217</span>
+    <span>ignacio.pieve@gmail.com</span>
+    <span>linkedin.com/in/ignaciopieve</span>
+    <span>Córdoba, Argentina</span>
+  </div>
+</div>
+
+<div class="section">
+  <div class="section-title">Summary</div>
+  <p class="summary">Senior Backend Engineer with 5+ years building production systems in Python. Currently leading technical initiatives at Bigbox (e-commerce platform with ~95k MAU), including hybrid search migration to Elasticsearch, payment infrastructure, AI-powered developer tooling, and event-driven microservices architecture. GCP Professional Cloud Architect certified. Comfortable owning projects end-to-end, from architecture decisions to production rollout.</p>
+</div>
+
+<div class="section">
+  <div class="section-title">Experience</div>
+
+  <div class="job">
+    <div class="job-header">
+      <div class="job-title">Senior Backend Engineer</div>
+      <div class="job-date">Jun 2022 — Present</div>
+    </div>
+    <div class="job-company">Bigbox S.A. — Remote</div>
+    <ul>
+      <li>Led migration from monolithic architecture to event-driven microservices using GCP Pub/Sub. Designed an internal Python library (Artifact Registry) abstracting publish/consume patterns, adopted across all backend services.</li>
+      <li>Owned search platform evolution: led migration from direct DB queries to Elastic AppSearch (~10x performance gain), then to native Elasticsearch with hybrid (BM25 + semantic) search, reducing latency by ~50%. Currently extending with calendar-based availability search.</li>
+      <li>Designed and shipped an AI-powered developer automation: autonomous agent that monitors Jira, spins up Claude Code on Cloud Run Jobs, clones repos, analyzes bug context, and proposes PRs automatically. Orchestrated via n8n. Initiative proposed and led independently.</li>
+      <li>Built internal AI assistant for the engineering team providing chat-based environment management and technical Q&amp;A.</li>
+      <li>Led integration of multiple payment gateways (Stripe, PayPal, MercadoPago, MODO, Openpay) and migrated to Yuno (payment orchestrator) — eliminating future integration overhead and improving fraud handling.</li>
+      <li>Drove platform-wide performance improvements: image proxy (~5x reduction in page load), Cloudflare CDN adoption, GraphQL query optimization, strategic caching.</li>
+      <li>Acted as informal tech lead: architecture decisions, code reviews, and unblocking peers.</li>
+    </ul>
+  </div>
+
+  <div class="job">
+    <div class="job-header">
+      <div class="job-title">Lead Backend Developer</div>
+      <div class="job-date">Nov 2021 — May 2022</div>
+    </div>
+    <div class="job-company">Baja Technologies (Cybertiks project) — Remote</div>
+    <ul>
+      <li>Led backend on a B2B platform connecting brands with influencers for a Mexican client.</li>
+      <li>Designed and built the full backend on AWS (EC2, S3, Lambda, DynamoDB, Cognito) using Python + Flask + MySQL.</li>
+      <li>Implemented scraping and metrics pipelines for influencer analytics. Worked with MongoDB and Django on adjacent projects.</li>
+    </ul>
+  </div>
+
+  <div class="job">
+    <div class="job-header">
+      <div class="job-title">Backend Developer</div>
+      <div class="job-date">Mar 2021 — Nov 2021</div>
+    </div>
+    <div class="job-company">Universidad Nacional de Córdoba — Córdoba</div>
+    <ul>
+      <li>Backend support for the BI team. Data extraction, statistical reporting, Linux server administration, database maintenance, Docker container management.</li>
+    </ul>
+  </div>
+
+  <div class="job">
+    <div class="job-header">
+      <div class="job-title">Fullstack Developer</div>
+      <div class="job-date">Sep 2020 — Mar 2021</div>
+    </div>
+    <div class="job-company">CICLAT — Córdoba</div>
+    <ul>
+      <li>End-to-end stock and task management system: backend in Python + Flask on AWS EC2, mobile app in Flutter.</li>
+    </ul>
+  </div>
+
+  <div class="job">
+    <div class="job-header">
+      <div class="job-title">Backend Developer &amp; DBA</div>
+      <div class="job-date">Jan 2019 — Sep 2020</div>
+    </div>
+    <div class="job-company">Xponencia Systems — Córdoba</div>
+    <ul>
+      <li>REST API development across Python, Java and C#. Oracle DB administration, Linux/Windows server provisioning.</li>
+    </ul>
+  </div>
+</div>
+
+<div class="section">
+  <div class="section-title">Skills</div>
+  <div class="skills-grid">
+    <div class="skills-label">Languages</div>
+    <div>Python, SQL</div>
+    <div class="skills-label">Backend</div>
+    <div>Django, FastAPI, Flask, GraphQL, REST APIs, Microservices, Event-driven architectures</div>
+    <div class="skills-label">Cloud — GCP</div>
+    <div>GKE (Kubernetes), Cloud Run, Pub/Sub, Cloud Build, Compute Engine, Load Balancers, Artifact Registry</div>
+    <div class="skills-label">Cloud — AWS</div>
+    <div>EC2, S3, Lambda, DynamoDB, Cognito</div>
+    <div class="skills-label">Databases</div>
+    <div>PostgreSQL, MongoDB, MySQL, DynamoDB</div>
+    <div class="skills-label">Search &amp; AI</div>
+    <div>Elasticsearch (hybrid/semantic search), RAG systems, LLM APIs (Claude, OpenAI), n8n</div>
+    <div class="skills-label">Infrastructure</div>
+    <div>Docker, Linux, CI/CD, Cloudflare CDN, Sentry, New Relic</div>
+  </div>
+</div>
+
+<div class="section">
+  <div class="section-title">Education</div>
+  <div class="education-item">
+    <div class="education-header">
+      <div class="education-title">Software Engineering</div>
+      <div class="education-date">2018 — 2022</div>
+    </div>
+    <div class="education-school">Universidad Tecnológica Nacional</div>
+    <div class="thesis">Final thesis: Meddly — Mobile app (Flutter) + FastAPI backend on AWS with a Scikit-learn ML model for skin lesion pre-diagnosis using Kaggle dermatology data. Functional prototype.</div>
+  </div>
+</div>
+
+<div class="section">
+  <div class="section-title">Certifications</div>
+  <div class="cert-item">
+    <div class="cert-header">
+      <div class="cert-title">Google Cloud Professional Cloud Architect</div>
+      <div class="cert-date">Feb 2026 — Feb 2028</div>
+    </div>
+    <div class="cert-issuer">Google Cloud</div>
+  </div>
+  <div class="cert-item">
+    <div class="cert-header">
+      <div class="cert-title">Retrieval Augmented Generation (RAG)</div>
+      <div class="cert-date">Sep 2025</div>
+    </div>
+    <div class="cert-issuer">Coursera</div>
+  </div>
+</div>
+
+<div class="section">
+  <div class="section-title">Languages</div>
+  <div class="languages">Spanish (Native) · English (Fluent)</div>
+</div>
+
+</body>
+</html>
